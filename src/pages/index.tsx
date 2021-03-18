@@ -3,7 +3,7 @@ import { NewsletterForm } from "../components/NewsletterForm"
 // @ts-ignore
 import Jacques from "../images/jacques.png"
 // @ts-ignore
-import Wave from "../images/wave.svg"
+import HeroWave from "../images/heroWave.svg"
 
 const IndexPage = () => {
     return (
@@ -27,7 +27,7 @@ const IndexPage = () => {
                 style={{ height: 44, marginTop: -44 }}
             >
                 <img
-                    src={Wave}
+                    src={HeroWave}
                     className="absolute top-0 left-0 right-0 bottom-0 h-full"
                     style={{ minWidth: 800 }}
                 />
