@@ -12,14 +12,14 @@ export const TextInput = ({ error, ...inputProps }: TextInputProps) => {
         <div className="flex-1">
             <input
                 className={classNames(
-                    "border-gray-300 rounded-md h-12 px-4 font-normal text-base w-full",
-                    { "border-red-300": !!error }
+                    "border border-transparent rounded-md h-12 px-4 font-normal text-base w-full text-black",
+                    { "border border-red-400": !!error }
                 )}
                 {...inputProps}
             />
             {error && (
                 <div
-                    className="h-0 text-sm text-red-500 relative top-1"
+                    className="sm:h-0 text-sm text-red-500 relative top-1"
                     role="alert"
                 >
                     {error}
