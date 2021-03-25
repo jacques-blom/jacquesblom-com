@@ -76,7 +76,10 @@ export const NewsletterForm = () => {
         >
             {({ handleSubmit, submitError, submitting }) => (
                 <div>
-                    <form className="flex items-center" onSubmit={handleSubmit}>
+                    <form
+                        className="items-center space-y-3 sm:space-y-0 sm:flex sm:space-x-2"
+                        onSubmit={handleSubmit}
+                    >
                         <Field name="name">
                             {({ input, meta }) => (
                                 <TextInput
@@ -105,7 +108,7 @@ export const NewsletterForm = () => {
                         <button
                             type="submit"
                             className={classNames(
-                                "rounded-md text-white h-12 px-4",
+                                "rounded-md text-white h-12 px-4 w-full sm:w-auto",
                                 submitting ? "bg-gray-400" : "bg-blue-600"
                             )}
                             disabled={submitting}

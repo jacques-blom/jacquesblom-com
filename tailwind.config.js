@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
+const colors = require("tailwindcss/colors")
 
 module.exports = {
     purge: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -15,6 +16,10 @@ module.exports = {
                     wave: `url('/wavePattern.svg'), linear-gradient(to top right, ${blue["700"]}, ${purple["600"]})`,
                 }
             },
+        },
+        colors: {
+            ...defaultTheme.colors,
+            gray: colors.blueGray,
         },
     },
     variants: {

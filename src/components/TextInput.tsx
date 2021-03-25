@@ -9,10 +9,10 @@ type TextInputProps = HTMLInputProps & {
 
 export const TextInput = ({ error, ...inputProps }: TextInputProps) => {
     return (
-        <div className="flex-1 mr-2">
+        <div className="flex-1">
             <input
                 className={classNames(
-                    "border border-gray-300 rounded-md h-12 px-4 font-normal text-base w-full",
+                    "border-gray-300 rounded-md h-12 px-4 font-normal text-base w-full",
                     { "border-red-300": !!error }
                 )}
                 {...inputProps}

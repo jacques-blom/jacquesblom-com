@@ -2,6 +2,7 @@ module.exports = {
     siteMetadata: {
         title: "Jacques Blom",
         siteUrl: "https://jacquesblom.com",
+        twitterUsername: "jacques_codes",
     },
     plugins: [
         "gatsby-plugin-gatsby-cloud",
@@ -35,5 +36,11 @@ module.exports = {
             __key: "pages",
         },
         "gatsby-plugin-postcss",
+        {
+            resolve: "gatsby-plugin-google-gtag",
+            options: {
+                trackingIds: ["G-NZE7W0741G"],
+            },
+        },
     ],
 }
