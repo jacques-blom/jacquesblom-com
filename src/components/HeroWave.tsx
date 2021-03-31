@@ -3,11 +3,9 @@ import * as React from "react"
 export const HeroWave = (props) => {
     return (
         <svg
-            width={1440}
-            height={44}
             viewBox="0 0 1440 44"
             xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio
+            preserveAspectRatio="none"
             {...props}
         >
             <g clipPath="url(#prefix__clip0)">
