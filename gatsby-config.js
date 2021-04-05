@@ -42,5 +42,12 @@ module.exports = {
                 trackingIds: ["G-NZE7W0741G"],
             },
         },
+        {
+            resolve: `gatsby-plugin-hotjar`,
+            options: {
+                id: 2333512,
+                sv: 6,
+            },
+        },
     ],
 }
