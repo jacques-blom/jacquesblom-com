@@ -73,11 +73,12 @@ export const NewsletterForm = () => {
 
                 return errors
             }}
+            validateOnBlur={false}
         >
             {({ handleSubmit, submitError, submitting }) => (
                 <div>
                     <form
-                        className="items-center space-y-3 sm:space-y-0 sm:flex sm:space-x-2"
+                        className="space-y-3 sm:space-y-0 sm:flex sm:space-x-2 items-start"
                         onSubmit={handleSubmit}
                     >
                         <Field name="name">
@@ -108,8 +109,10 @@ export const NewsletterForm = () => {
                         <button
                             type="submit"
                             className={classNames(
-                                "rounded-md text-white h-12 px-4 w-full sm:w-auto",
-                                submitting ? "bg-gray-400" : "bg-blue-600"
+                                "rounded-md text-white h-14 px-8 w-full sm:w-auto font-bold tracking-wide outline-none focus:outline-none focus:ring ring-gray-400",
+                                submitting
+                                    ? "bg-gray-400 cursor-default"
+                                    : "bg-gradient"
                             )}
                             disabled={submitting}
                         >

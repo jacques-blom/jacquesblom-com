@@ -32,6 +32,8 @@ const SEO = ({
         url: `${siteUrl}${pathname}`,
     }
 
+    console.log("seo", seo)
+
     return (
         <Helmet title={seo.title} titleTemplate={titleTemplate} defer={false}>
             <meta name="description" content={seo.description} />
@@ -61,8 +63,9 @@ const query = graphql`
         site {
             siteMetadata {
                 defaultTitle: title
+                defaultDescription: description
                 siteUrl
-                # defaultImage: image
+                defaultImage: image
                 twitterUsername
             }
         }

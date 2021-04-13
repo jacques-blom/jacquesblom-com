@@ -11,7 +11,7 @@ import SEO from "../components/SEO"
 const IndexPage = () => {
     return (
         <div className="pb-28">
-            <SEO description="Hi! I'm Jacques. A developer, learning in public. I make content to help & empower other developers." />
+            <SEO />
             <div className="gradient-purple px-8 pt-8 md:pt-0">
                 <div
                     className="max-w-4xl mx-auto flex flex-col justify-between items-center md:flex-row"
@@ -65,16 +65,37 @@ const IndexPage = () => {
                             <strong>how to take full advantage of them</strong>{" "}
                             to build the career and life you want.
                         </p>
-                        <h2 id="follow">🔔 Stay up to date!</h2>
+                        <h2 id="follow">👋 Keep in touch!</h2>
                         <p>
+                            My goal with my newsletter is to provide helpful
+                            content to front-end devs. I also love having
+                            conversations with people.
+                        </p>
+                        <p>
+                            No one likes receiving useless email. So I keep my
+                            newsletter high signal, low noise. And I only send
+                            one email per week every Monday.
+                        </p>
+                        <p>
+                            <strong>Enter your email below</strong> to keep in
+                            touch. 👇
+                        </p>
+                        <div className="max-w-2xl">
+                            <NewsletterForm />
+                        </div>
+                        <p className="text-sm">
+                            No spam. Unsubscribe at any time.
+                        </p>
+                        <p>
+                            You can also{" "}
                             <a
                                 href="https://twitter.com/jacques_codes"
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
-                                Follow me on Twitter
+                                follow me on Twitter
                             </a>{" "}
-                            for my daily learnings and thoughts or,{" "}
+                            for my daily learnings and thoughts, or{" "}
                             <a
                                 href="https://www.youtube.com/c/JacquesBlom"
                                 target="_blank"
@@ -85,13 +106,24 @@ const IndexPage = () => {
                             for coding tutorials.
                         </p>
                         <p>
-                            But to <strong>be the first to know</strong> about
-                            my latest thoughts, learnings, and content,{" "}
-                            <strong>sign up for my newsletter</strong> below. 👇
+                            My current big project is a free{" "}
+                            <a
+                                href="https://recoiljs.org"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Recoil.js
+                            </a>{" "}
+                            course, which you can check out at{" "}
+                            <a
+                                href="https://learnrecoil.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                learnrecoil.com
+                            </a>
+                            .
                         </p>
-                        <div className="max-w-xl">
-                            <NewsletterForm />
-                        </div>
                         <h2>😍 What people say about my content.</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {quotes.map(({ quote, name }) => (

@@ -13,6 +13,7 @@ module.exports = {
                 const { blue, purple } = theme().colors
 
                 return {
+                    gradient: `linear-gradient(to top right, ${blue["700"]}, ${purple["600"]})`,
                     wave: `url('/wavePattern.svg'), linear-gradient(to top right, ${blue["700"]}, ${purple["600"]})`,
                 }
             },
