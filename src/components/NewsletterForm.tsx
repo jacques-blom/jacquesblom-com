@@ -56,6 +56,11 @@ export const NewsletterForm = () => {
             onSubmit={async (data) => {
                 try {
                     await subscribe(data as any)
+                    // @ts-ignore
+                    if (typeof window.gtag === "function") {
+                        // @ts-ignore
+                        window.gtag("event", "subscribe")
+                    }
                     setSubmitted(true)
                 } catch (error) {
                     console.log(error)
