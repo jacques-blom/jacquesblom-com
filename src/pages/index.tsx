@@ -131,8 +131,10 @@ const IndexPage = () => {
                             ))}
                         </div>
                         <p>
-                            So what are you waiting for? 😉{" "}
-                            <a href="#follow">Sign up now.</a>
+                            So what are you waiting for? 😉
+                            <br />
+                            <a href="#follow">Sign up to my newsletter</a> and
+                            let's keep in touch.
                         </p>
                     </div>
                 </div>
