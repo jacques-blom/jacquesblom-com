@@ -1,10 +1,12 @@
 import { Link } from "gatsby"
 import React from "react"
 import { CheckCircle } from "react-feather"
+import SEO from "../components/SEO"
 
 const PreferencesConfirmed = () => {
     return (
         <div className="w-screen h-screen bg-wave flex flex-col items-center justify-center p-4">
+            <SEO title="Preferences Updated" />
             <div className="bg-gray-900 rounded-lg shadow-lg p-8 flex flex-col items-center mb-5">
                 <CheckCircle
                     size={40}
